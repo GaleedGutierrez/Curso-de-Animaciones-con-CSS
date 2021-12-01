@@ -18,6 +18,7 @@ html {
 body {
     font-family: $font-primary;
     font-size: 1.6rem;
+    counter-reset: game;
 }
 
 img,

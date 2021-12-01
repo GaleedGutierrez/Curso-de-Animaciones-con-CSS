@@ -27,9 +27,22 @@ html {
 body {
     font-family: "Quicksand", sans-serif;
     font-size: 1.6rem;
+    counter-reset: game;
 }
 
 img,
 svg {
     width: 100%;
+}
+
+body {
+    counter-reset: game;
+}
+
+input:checked {
+    counter-increment: game;
+}
+
+.total-count::after {
+    content: counter(game);
 }
