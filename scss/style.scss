@@ -1,13 +1,132 @@
 @import "./components/global/global";
+@import "./components/global/count";
 
-body {
-    counter-reset: game;
+ul, h3 {
+    display: none;
 }
 
-input:checked {
-    counter-increment: game;
+.phone {
+    position: relative;
+    width: 35rem;
+    height: 65rem;
+    border: 0.8rem solid $black;
+    border-radius: 4rem;
+    background: $hospital-blue;
+    box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 3.2rem rgba(0, 0, 0, 0.22);
 }
 
-.total-count::after {
-    content: counter(game);
+.layer-1 {
+    position: absolute;
+    bottom: 0;
+    right: 6rem;
+    z-index: 1;
+    width: 8rem;
+    height: 45rem;
+    background: $white;
+}
+
+.layer-2 {
+    position: absolute;
+    bottom: 0;
+    left: 6rem;
+    z-index: 2;
+    width: 8rem;
+    height: 45rem;
+    background-color: $white;
+}
+
+.layer-3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    width: 25rem;
+    height: 40rem;
+    margin: 0 auto;
+    border: 0.1rem solid $black;
+    background-color: wheat;
+}
+
+.layer-4 {
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+    z-index: 4;
+    width: 8rem;
+    height: 35rem;
+    border-bottom-left-radius: 3rem;
+    background-color: $white;
+}
+
+.layer-5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    width: 20rem;
+    height: 30rem;
+    margin: 0 auto;
+    border: 0.1rem solid $black;
+    border-bottom-left-radius: 3rem;
+    background-color: wheat;
+}
+
+.layer-6 {
+    bottom: 0;
+    right: 3.5rem;
+    position: absolute;
+    z-index: 6;
+    width: 8rem;
+    height: 25rem;
+    background-color: $white;
+}
+
+.layer-7 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 7;
+    width: 15rem;
+    height: 20rem;
+    margin: 0 auto;
+    border: 0.1rem solid $black;
+    border-bottom-right-radius: 3rem;
+    background-color: wheat;
+}
+
+.layer-8 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 8;
+    width: 20rem;
+    height: 12rem;
+    margin: 0 auto;
+    background-color: green;
+}
+
+.layer-9 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+    border-bottom-right-radius: 3rem;
+    background-color: $white;
+}
+
+.layer-10 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+    border-bottom-left-radius: 3rem;
+    background-color: $white;
 }
