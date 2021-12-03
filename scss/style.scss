@@ -1,7 +1,11 @@
 @import "./components/global/global";
 @import "./components/global/count";
+@import "./components/global/mountains";
+@import "./components/global/cloud";
+@import "./components/global/bush";
 
-ul, h3 {
+ul,
+h3 {
     display: none;
 }
 
@@ -20,23 +24,20 @@ ul, h3 {
     bottom: 0;
     right: 6rem;
     z-index: 1;
-    width: 8rem;
+    width: 9rem;
     height: 45rem;
-    background: $white;
 }
 
 .layer-2 {
     position: absolute;
     bottom: 0;
-    left: 6rem;
+    left: 4.2rem;
     z-index: 2;
-    width: 8rem;
+    width: 9rem;
     height: 45rem;
-    background-color: $white;
 }
 
 .layer-3 {
-    position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
@@ -44,8 +45,6 @@ ul, h3 {
     width: 25rem;
     height: 40rem;
     margin: 0 auto;
-    border: 0.1rem solid $black;
-    background-color: wheat;
 }
 
 .layer-4 {
@@ -53,23 +52,27 @@ ul, h3 {
     bottom: 0;
     left: 2rem;
     z-index: 4;
-    width: 8rem;
+    width: 9rem;
     height: 35rem;
-    border-bottom-left-radius: 3rem;
-    background-color: $white;
 }
 
 .layer-5 {
-    position: absolute;
     bottom: 0;
     left: 0;
     z-index: 5;
     width: 20rem;
     height: 30rem;
     margin: 0 auto;
-    border: 0.1rem solid $black;
-    border-bottom-left-radius: 3rem;
-    background-color: wheat;
+
+    .grass,
+    .zigzag,
+    .ground {
+        width: 20rem;
+    }
+
+    .ground {
+        height: 26.5rem;
+    }
 }
 
 .layer-6 {
@@ -77,22 +80,27 @@ ul, h3 {
     right: 3.5rem;
     position: absolute;
     z-index: 6;
-    width: 8rem;
+    width: 9rem;
     height: 25rem;
-    background-color: $white;
 }
 
 .layer-7 {
-    position: absolute;
     bottom: 0;
     right: 0;
     z-index: 7;
     width: 15rem;
     height: 20rem;
     margin: 0 auto;
-    border: 0.1rem solid $black;
-    border-bottom-right-radius: 3rem;
-    background-color: wheat;
+
+    .grass,
+    .zigzag,
+    .ground {
+        width: 15rem;
+    }
+
+    .ground {
+        height: 16.5rem;
+    }
 }
 
 .layer-8 {
@@ -101,32 +109,27 @@ ul, h3 {
     bottom: 0;
     left: 0;
     z-index: 8;
-    width: 20rem;
-    height: 12rem;
+    width: fit-content;
+    height: fit-content;
     margin: 0 auto;
-    background-color: green;
 }
 
 .layer-9 {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 0.9rem;
+    bottom: 0.8rem;
     z-index: 9;
-    width: 10rem;
-    height: 10rem;
     margin: 0 auto;
     border-bottom-right-radius: 3rem;
-    background-color: $white;
+    transform: scale(1.2);
+    // background-color: $white;
 }
 
 .layer-10 {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 0.8rem;
+    left: 0.9rem;
     z-index: 10;
-    width: 10rem;
-    height: 10rem;
     margin: 0 auto;
-    border-bottom-left-radius: 3rem;
-    background-color: $white;
+    transform: scale(1.2) rotateY(180deg);
 }
