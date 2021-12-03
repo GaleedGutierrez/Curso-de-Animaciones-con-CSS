@@ -1,0 +1,45 @@
+$radius-grass: 2rem;
+$radius-zigzag: 0.4rem;
+
+.mountains {
+    position: absolute;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    box-shadow: 0px 10px 20px 0px rgb(0 0 0 / 60%);
+}
+
+.grass {
+    position: absolute;
+    top: 0;
+    width: 25rem;
+    height: 2rem;
+    border-top-right-radius: $radius-grass;
+    border-top-left-radius: $radius-grass;
+    background-color: $grass;
+}
+
+.zigzag {
+    position: absolute;
+    top: 1.5rem;
+    width: 25rem;
+    height: 2rem;
+    border-top-right-radius: $radius-zigzag;
+    border-top-left-radius: $radius-zigzag;
+    background: linear-gradient(143deg, $grass 25%, transparent 25%) -5rem 0,
+        linear-gradient(-143deg, $grass 25%, transparent 25%) -5rem 0,
+        linear-gradient(37deg, $ground-litte 25%, transparent 25%),
+        linear-gradient(-37deg, $ground-litte 25%, $ground-hard 25%);
+    background-size: 2rem 2rem;
+}
+
+.ground {
+    position: absolute;
+    bottom: 0;
+    width: 25rem;
+    height: 36.5rem;
+    border-bottom-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    background-color: $ground-litte;
+}

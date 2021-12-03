@@ -1,0 +1,33 @@
+.bush-1,
+.bush-2,
+.bush-3,
+.bush-4 {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: $grass;
+}
+
+.bush-1 {
+    bottom: 2.1rem;
+    right: -5.2rem;
+}
+
+.bush-2 {
+    bottom: 0;
+    left: calc(50% - 10rem);
+    width: 20rem;
+    height: 5rem;
+    border-radius: 4rem;
+}
+
+.bush-3 {
+    bottom: 0;
+    right: 0;
+}
+
+.bush-4 {
+    bottom: 0;
+    left: 0;
+}

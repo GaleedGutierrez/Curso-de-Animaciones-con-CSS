@@ -1,3 +1,4 @@
+
 extend ./components/global/_global.pug
 block head 
     +style-head("style.css")
@@ -6,19 +7,54 @@ block head
     +favicon("https://static.platzi.com/media/achievements/badges-animacion-css-02-740b1ebd-dbcf-4cfc-befb-5988cc6b03d0.png", "png")
     +titles("Animationland")
 block main 
+    -var chems = "../assets/images/Chems.svg"
     main.main
         section.phone 
-            .layer-1 
+            //- chems 1
+            .layer-1
+                figure 
+                    img(src= chems, alt="")
+            //- chems 2
             .layer-2 
-            .layer-3 
+                 figure 
+                    img(src= chems, alt="")
+            .layer-3.mountains 
+                .grass 
+                .zigzag 
+                .ground
             .layer-4 
-            .layer-5 
+                //- chems 3
+                figure 
+                    img(src= chems, alt="")
+            .layer-5.mountains 
+                .grass 
+                .zigzag 
+                .ground
+            //- chems 4
             .layer-6 
-            .layer-7 
+                figure 
+                    img(src= chems, alt="")
+            .layer-7.mountains
+                .grass 
+                .zigzag 
+                .ground
             .layer-8 
-            .layer-9 
+                .bush-1
+                .bush-2
+                .bush-3
+                .bush-4
+            .layer-9
+                .cloud
+                    .cloud-sub3
+                    .cloud-sub2
+                    .cloud-sub1
             .layer-10 
+                .cloud
+                    .cloud-sub3
+                    .cloud-sub2
+                    .cloud-sub1
         ul 
             each counter in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
                 +shield=counter
-        h3.total-count Score: 
+        h3.total-count Score:
+        //- img(src="https://drive.google.com/uc?export=view&id=12F2AzZOdgFCY4_MpQVkLXfwbuZW5Vk_k", alt="")

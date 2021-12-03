@@ -1,7 +1,3 @@
-p {
-    color: #232830;
-}
-
 h1 {
     font-size: 1.8rem;
 }
@@ -52,7 +48,117 @@ input:checked {
     content: counter(game);
 }
 
-ul, h3 {
+.mountains {
+    position: absolute;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.6);
+            box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.6);
+}
+
+.grass {
+    position: absolute;
+    top: 0;
+    width: 25rem;
+    height: 2rem;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    background-color: #66a169;
+}
+
+.zigzag {
+    position: absolute;
+    top: 1.5rem;
+    width: 25rem;
+    height: 2rem;
+    border-top-right-radius: 0.4rem;
+    border-top-left-radius: 0.4rem;
+    background: linear-gradient(143deg, #66a169 25%, transparent 25%) -5rem 0, linear-gradient(-143deg, #66a169 25%, transparent 25%) -5rem 0, linear-gradient(37deg, #bb6d50 25%, transparent 25%), linear-gradient(-37deg, #bb6d50 25%, #9f553a 25%);
+    background-size: 2rem 2rem;
+}
+
+.ground {
+    position: absolute;
+    bottom: 0;
+    width: 25rem;
+    height: 36.5rem;
+    border-bottom-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    background-color: #bb6d50;
+}
+
+.cloud {
+    width: 12rem;
+    height: 7.61rem;
+}
+
+.cloud-sub1 {
+    position: absolute;
+    top: calc(50% - 2rem);
+    left: 1.6rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.cloud-sub2 {
+    position: absolute;
+    left: calc(50% - 3rem);
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.cloud-sub3 {
+    position: absolute;
+    right: 0.7rem;
+    bottom: 0;
+    width: 12rem;
+    height: 4.11rem;
+    border-radius: 40rem;
+    background-color: #ffffff;
+}
+
+.bush-1,
+.bush-2,
+.bush-3,
+.bush-4 {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: #66a169;
+}
+
+.bush-1 {
+    bottom: 2.1rem;
+    right: -5.2rem;
+}
+
+.bush-2 {
+    bottom: 0;
+    left: calc(50% - 10rem);
+    width: 20rem;
+    height: 5rem;
+    border-radius: 4rem;
+}
+
+.bush-3 {
+    bottom: 0;
+    right: 0;
+}
+
+.bush-4 {
+    bottom: 0;
+    left: 0;
+}
+
+ul,
+h3 {
     display: none;
 }
 
@@ -72,23 +178,20 @@ ul, h3 {
     bottom: 0;
     right: 6rem;
     z-index: 1;
-    width: 8rem;
+    width: 9rem;
     height: 45rem;
-    background: #ffffff;
 }
 
 .layer-2 {
     position: absolute;
     bottom: 0;
-    left: 6rem;
+    left: 4.2rem;
     z-index: 2;
-    width: 8rem;
+    width: 9rem;
     height: 45rem;
-    background-color: #ffffff;
 }
 
 .layer-3 {
-    position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
@@ -96,8 +199,6 @@ ul, h3 {
     width: 25rem;
     height: 40rem;
     margin: 0 auto;
-    border: 0.1rem solid #000000;
-    background-color: wheat;
 }
 
 .layer-4 {
@@ -105,23 +206,25 @@ ul, h3 {
     bottom: 0;
     left: 2rem;
     z-index: 4;
-    width: 8rem;
+    width: 9rem;
     height: 35rem;
-    border-bottom-left-radius: 3rem;
-    background-color: #ffffff;
 }
 
 .layer-5 {
-    position: absolute;
     bottom: 0;
     left: 0;
     z-index: 5;
     width: 20rem;
     height: 30rem;
     margin: 0 auto;
-    border: 0.1rem solid #000000;
-    border-bottom-left-radius: 3rem;
-    background-color: wheat;
+}
+.layer-5 .grass,
+.layer-5 .zigzag,
+.layer-5 .ground {
+    width: 20rem;
+}
+.layer-5 .ground {
+    height: 26.5rem;
 }
 
 .layer-6 {
@@ -129,22 +232,25 @@ ul, h3 {
     right: 3.5rem;
     position: absolute;
     z-index: 6;
-    width: 8rem;
+    width: 9rem;
     height: 25rem;
-    background-color: #ffffff;
 }
 
 .layer-7 {
-    position: absolute;
     bottom: 0;
     right: 0;
     z-index: 7;
     width: 15rem;
     height: 20rem;
     margin: 0 auto;
-    border: 0.1rem solid #000000;
-    border-bottom-right-radius: 3rem;
-    background-color: wheat;
+}
+.layer-7 .grass,
+.layer-7 .zigzag,
+.layer-7 .ground {
+    width: 15rem;
+}
+.layer-7 .ground {
+    height: 16.5rem;
 }
 
 .layer-8 {
@@ -153,32 +259,32 @@ ul, h3 {
     bottom: 0;
     left: 0;
     z-index: 8;
-    width: 20rem;
-    height: 12rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     margin: 0 auto;
-    background-color: green;
 }
 
 .layer-9 {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 0.9rem;
+    bottom: 0.8rem;
     z-index: 9;
-    width: 10rem;
-    height: 10rem;
     margin: 0 auto;
     border-bottom-right-radius: 3rem;
-    background-color: #ffffff;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
 }
 
 .layer-10 {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 0.8rem;
+    left: 0.9rem;
     z-index: 10;
-    width: 10rem;
-    height: 10rem;
     margin: 0 auto;
-    border-bottom-left-radius: 3rem;
-    background-color: #ffffff;
+    -webkit-transform: scale(1.2) rotateY(180deg);
+            transform: scale(1.2) rotateY(180deg);
 }
