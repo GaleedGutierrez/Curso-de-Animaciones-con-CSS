@@ -1,0 +1,74 @@
+.layer-1 {
+    animation: cheems1Animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cheems1Animation {
+    0% {
+        top: 18.4rem;
+    }
+
+    25% {
+        top: 24rem;
+    }
+
+    100% {
+        top: 18.4rem;
+    }
+}
+
+.layer-2 {
+    animation: cheems2Animation 3s linear 1s infinite;
+} 
+
+@keyframes cheems2Animation {
+    0% {
+        top: 18.4rem;
+    }
+
+    50% {
+        top: 24rem;
+    }
+
+    100% {
+        top: 18.4rem;
+    }
+}
+
+.layer-4 {
+    animation: cheems3Animation 2s ease-in 2s infinite;
+}
+
+@keyframes cheems3Animation {
+    0% {
+        top: 28.4rem;
+    }
+
+    50% {
+        top: 44rem;
+    }
+
+    100% {
+        top: 28.4rem;
+    }
+}
+
+.layer-6 {
+    animation: cheems4Animation 1.5s ease-out 2s infinite;
+}
+
+@keyframes cheems4Animation {
+    0% {
+        bottom: 14.5rem;
+    }
+
+    50% {
+        bottom: 4.5rem;
+    }
+
+    100% {
+        bottom: 14.5rem;
+    }
+}

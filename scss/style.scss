@@ -3,6 +3,7 @@
 @import "./components/global/mountains";
 @import "./components/global/cloud";
 @import "./components/global/bush";
+@import "./components/global/animations";
 
 
 .phone {
@@ -29,25 +30,8 @@
     right: 6rem;
     z-index: 1;
     width: 9rem;
-    animation: chems1Animation;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
 }
 
-@keyframes chems1Animation {
-    0% {
-        top: 18.4rem;
-    }
-
-    25% {
-        top: 24rem;
-    }
-
-    100% {
-        top: 18.4rem;
-    }
-}
 
 .layer-2 {
     position: absolute;
