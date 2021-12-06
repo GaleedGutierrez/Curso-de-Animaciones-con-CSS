@@ -7,16 +7,18 @@ block head
     +favicon("https://static.platzi.com/media/achievements/badges-animacion-css-02-740b1ebd-dbcf-4cfc-befb-5988cc6b03d0.png", "png")
     +titles("Animationland")
 block main 
-    -var chems = "../assets/images/Chems.svg"
+    -var chems = "../assets/images/Chems.png"
     main.main
-        section.phone 
-            //- chems 1
+        section.phone
             .layer-1
+                input(type="checkbox")
                 figure 
                     img(src= chems, alt="")
+            //- chems 1
             //- chems 2
-            .layer-2 
-                 figure 
+            .layer-2
+                input(type="checkbox")
+                figure 
                     img(src= chems, alt="")
             .layer-3.mountains 
                 .grass 
@@ -24,6 +26,7 @@ block main
                 .ground
             .layer-4 
                 //- chems 3
+                input(type="checkbox")
                 figure 
                     img(src= chems, alt="")
             .layer-5.mountains 
@@ -32,6 +35,7 @@ block main
                 .ground
             //- chems 4
             .layer-6 
+                input(type="checkbox")
                 figure 
                     img(src= chems, alt="")
             .layer-7.mountains
@@ -53,8 +57,7 @@ block main
                     .cloud-sub3
                     .cloud-sub2
                     .cloud-sub1
-        ul 
-            each counter in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-                +shield=counter
-        h3.total-count Score:
-        //- img(src="https://drive.google.com/uc?export=view&id=12F2AzZOdgFCY4_MpQVkLXfwbuZW5Vk_k", alt="")
+            .score-section
+                h1.title Animationland
+                h3.total-count Score: 
+            

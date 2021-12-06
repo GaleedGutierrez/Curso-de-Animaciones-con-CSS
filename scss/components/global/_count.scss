@@ -2,6 +2,14 @@ body {
     counter-reset: game;
 }
 
+input[type="checkbox"] {
+    position: absolute;
+    width: 9rem;
+    height: 10rem;
+    appearance: none;
+    cursor: pointer;
+}
+
 input:checked {
     counter-increment: game;
 }
