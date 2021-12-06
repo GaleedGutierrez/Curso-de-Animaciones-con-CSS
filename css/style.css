@@ -167,6 +167,124 @@ input:checked {
     left: 0;
 }
 
+.layer-1 {
+    -webkit-animation: cheems1Animation;
+            animation: cheems1Animation;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes cheems1Animation {
+    0% {
+        top: 18.4rem;
+    }
+    25% {
+        top: 24rem;
+    }
+    100% {
+        top: 18.4rem;
+    }
+}
+
+@keyframes cheems1Animation {
+    0% {
+        top: 18.4rem;
+    }
+    25% {
+        top: 24rem;
+    }
+    100% {
+        top: 18.4rem;
+    }
+}
+.layer-2 {
+    -webkit-animation: cheems2Animation 3s linear 1s infinite;
+            animation: cheems2Animation 3s linear 1s infinite;
+}
+
+@-webkit-keyframes cheems2Animation {
+    0% {
+        top: 18.4rem;
+    }
+    50% {
+        top: 24rem;
+    }
+    100% {
+        top: 18.4rem;
+    }
+}
+
+@keyframes cheems2Animation {
+    0% {
+        top: 18.4rem;
+    }
+    50% {
+        top: 24rem;
+    }
+    100% {
+        top: 18.4rem;
+    }
+}
+.layer-4 {
+    -webkit-animation: cheems3Animation 2s ease-in 2s infinite;
+            animation: cheems3Animation 2s ease-in 2s infinite;
+}
+
+@-webkit-keyframes cheems3Animation {
+    0% {
+        top: 28.4rem;
+    }
+    50% {
+        top: 44rem;
+    }
+    100% {
+        top: 28.4rem;
+    }
+}
+
+@keyframes cheems3Animation {
+    0% {
+        top: 28.4rem;
+    }
+    50% {
+        top: 44rem;
+    }
+    100% {
+        top: 28.4rem;
+    }
+}
+.layer-6 {
+    -webkit-animation: cheems4Animation 1.5s ease-out 2s infinite;
+            animation: cheems4Animation 1.5s ease-out 2s infinite;
+}
+
+@-webkit-keyframes cheems4Animation {
+    0% {
+        bottom: 14.5rem;
+    }
+    50% {
+        bottom: 4.5rem;
+    }
+    100% {
+        bottom: 14.5rem;
+    }
+}
+
+@keyframes cheems4Animation {
+    0% {
+        bottom: 14.5rem;
+    }
+    50% {
+        bottom: 4.5rem;
+    }
+    100% {
+        bottom: 14.5rem;
+    }
+}
 .phone {
     display: -ms-grid;
     display: grid;
@@ -197,39 +315,8 @@ input:checked {
     right: 6rem;
     z-index: 1;
     width: 9rem;
-    -webkit-animation: chems1Animation;
-            animation: chems1Animation;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes chems1Animation {
-    0% {
-        top: 18.4rem;
-    }
-    25% {
-        top: 24rem;
-    }
-    100% {
-        top: 18.4rem;
-    }
-}
-
-@keyframes chems1Animation {
-    0% {
-        top: 18.4rem;
-    }
-    25% {
-        top: 24rem;
-    }
-    100% {
-        top: 18.4rem;
-    }
-}
 .layer-2 {
     position: absolute;
     top: 18.4rem;
