@@ -40,6 +40,16 @@ body {
     counter-reset: game;
 }
 
+input[type=checkbox] {
+    position: absolute;
+    width: 9rem;
+    height: 10rem;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    cursor: pointer;
+}
+
 input:checked {
     counter-increment: game;
 }
@@ -157,12 +167,14 @@ input:checked {
     left: 0;
 }
 
-ul,
-h3 {
-    display: none;
-}
-
 .phone {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: -webkit-min-content;
+    -ms-grid-rows: min-content;
+    grid-template-rows: -webkit-min-content;
+    grid-template-rows: min-content;
+    justify-items: center;
     position: relative;
     width: 35rem;
     height: 65rem;
@@ -173,22 +185,57 @@ h3 {
             box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 3.2rem rgba(0, 0, 0, 0.22);
 }
 
+.score-section {
+    -webkit-margin-before: 4rem;
+            margin-block-start: 4rem;
+    text-align: center;
+}
+
 .layer-1 {
     position: absolute;
-    bottom: 0;
+    top: 18.4rem;
     right: 6rem;
     z-index: 1;
     width: 9rem;
-    height: 45rem;
+    -webkit-animation: chems1Animation;
+            animation: chems1Animation;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 
+@-webkit-keyframes chems1Animation {
+    0% {
+        top: 18.4rem;
+    }
+    25% {
+        top: 24rem;
+    }
+    100% {
+        top: 18.4rem;
+    }
+}
+
+@keyframes chems1Animation {
+    0% {
+        top: 18.4rem;
+    }
+    25% {
+        top: 24rem;
+    }
+    100% {
+        top: 18.4rem;
+    }
+}
 .layer-2 {
     position: absolute;
-    bottom: 0;
+    top: 18.4rem;
     left: 4.2rem;
     z-index: 2;
     width: 9rem;
-    height: 45rem;
 }
 
 .layer-3 {
@@ -203,11 +250,10 @@ h3 {
 
 .layer-4 {
     position: absolute;
-    bottom: 0;
+    top: 28.4rem;
     left: 2rem;
     z-index: 4;
     width: 9rem;
-    height: 35rem;
 }
 
 .layer-5 {
@@ -228,12 +274,11 @@ h3 {
 }
 
 .layer-6 {
-    bottom: 0;
+    bottom: 14.5rem;
     right: 3.5rem;
     position: absolute;
     z-index: 6;
     width: 9rem;
-    height: 25rem;
 }
 
 .layer-7 {

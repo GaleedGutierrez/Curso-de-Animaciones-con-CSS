@@ -4,12 +4,11 @@
 @import "./components/global/cloud";
 @import "./components/global/bush";
 
-ul,
-h3 {
-    display: none;
-}
 
 .phone {
+    display: grid;
+    grid-template-rows: min-content;
+    justify-items: center;
     position: relative;
     width: 35rem;
     height: 65rem;
@@ -19,22 +18,43 @@ h3 {
     box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 3.2rem rgba(0, 0, 0, 0.22);
 }
 
+.score-section {
+    margin-block-start: 4rem;
+    text-align: center;
+}
+
 .layer-1 {
     position: absolute;
-    bottom: 0;
+    top: 18.4rem;
     right: 6rem;
     z-index: 1;
     width: 9rem;
-    height: 45rem;
+    animation: chems1Animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes chems1Animation {
+    0% {
+        top: 18.4rem;
+    }
+
+    25% {
+        top: 24rem;
+    }
+
+    100% {
+        top: 18.4rem;
+    }
 }
 
 .layer-2 {
     position: absolute;
-    bottom: 0;
+    top: 18.4rem;
     left: 4.2rem;
     z-index: 2;
     width: 9rem;
-    height: 45rem;
 }
 
 .layer-3 {
@@ -49,11 +69,10 @@ h3 {
 
 .layer-4 {
     position: absolute;
-    bottom: 0;
+    top: 28.4rem;
     left: 2rem;
     z-index: 4;
     width: 9rem;
-    height: 35rem;
 }
 
 .layer-5 {
@@ -76,12 +95,11 @@ h3 {
 }
 
 .layer-6 {
-    bottom: 0;
+    bottom: 14.5rem;
     right: 3.5rem;
     position: absolute;
     z-index: 6;
     width: 9rem;
-    height: 25rem;
 }
 
 .layer-7 {
